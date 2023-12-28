@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100lvh;
+}
+
+.up {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15vh;
+    height: 70vh;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    position: absolute;
+    width: 100vw;
+    height: 65vh;
+    z-index: 1;
+}
+
+.text {
+    width: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+
+h1 {
+    font-family: 'heebo';
+    font-size: 6.5rem;
+    line-height: 2;
+    color: #D3E10E;
+    text-align: center;
+}
+
+p {
+    font-family: 'heebo';
+    font-size: 1.5rem;
+    color: #F9F9F9;
+    text-align: center;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 3em;
+}
+
+.in_form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'heebo';
+    font-size: 1rem;
+    text-align: right;
+}
+
+input {
+    width: 30em;
+    height: 4.5em;
+    border: none;
+    border-bottom: 4px solid #D3E10E;
+    background-color: #F6F6F6;
+}
+
+#btn {
+    height: 2.5em;
+    width: 10em;
+    border: none;
+    background-color: #D3E10E;
+    font-family: 'heebo';
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #011560;
+}
+
+
+@media screen and (max-width:400px),
+screen and (max-width:800px) {
+
+    .up {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        z-index: 1;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .down {
+        width: 100%;
+        padding-top: 50vh;
+    }
+
+    form {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .in_form {
+        width: 90%;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #btn {
+        width: 90%;
+    }
+
+}

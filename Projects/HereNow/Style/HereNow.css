@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.b_container {
+    width: 100vw;
+    height: 100lvh;
+    /* border: 1px solid #000; */
+    background: linear-gradient(#281EFF, #2DFF8C);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    margin-top: 30vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    /* margin: 18%; */
+    /* border: 1px solid #000; */
+}
+
+/* .inform {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+} */
+
+h1 {
+    font-family: 'Satisfy';
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 10em;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 5px 4px 5px #00000087;
+    /* border: 2px solid #13860f; */
+}
+
+h2 {
+    font-family: 'Varela Round';
+    color: #FFFFFF;
+    font-size: 2em;
+    line-height: 1;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 18px;
+    /* border: 2px solid #13860f; */
+}
+
+p {
+    font-family: 'Varela Round';
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 26px;
+    /* border: 2px solid #13860f; */
+}
+
+form {
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+
+    /* border: 1px solid #000; */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 20px;
+    font-family: 'Varela Round';
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 2;
+    /* text-align: right; */
+    /* border: 2px solid #702020; */
+}
+
+input {
+    width: 418px;
+    height: 50px;
+    margin: 0;
+    background: transparent;
+    border: 1px solid #F9F9F9;
+}
+
+
+
+#btn {
+    width: 206px;
+    height: 52px;
+    color: #1C1C1C;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 0;
+    text-align: center;
+    border: none;
+    margin-top: 32px;
+}
+
+
+@media screen and (max-width:800px) {
+    .b_container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100vw;
+        /* height: 100vh; */
+        padding: 0 5% 0 5%;
+        margin: auto;
+    }
+
+    h1 {
+        line-height: 1.5;
+        font-size: 3.7rem;
+        margin-top: 10vh;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+
+    form {
+        /* justify-content: center; */
+        font-size: 0.8rem;
+        flex-direction: column;
+        /* border: 1px solid #000; */
+    }
+
+    input {
+        width: 298px;
+        height: 40px;
+    }
+
+    #btn {
+        width: 298px;
+        height: 40px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+}

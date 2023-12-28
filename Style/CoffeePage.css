@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.my_body {
+    background-image: url(../Images/backround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my_container {
+    padding-top: 8vh;
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+    background-color: #141415bf;
+}
+
+.logo_name {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.my_navbar {
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #141415;
+    z-index: 5;
+}
+
+
+.logo_name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 6rem;
+}
+
+.portfolio {
+    padding: 3em 0 1em;
+}
+
+.icon {
+    display: flex;
+    gap: 1.5em;
+    margin-top: 2em;
+    padding: 1.3em;
+    justify-content: center;
+    background-color: #343338d6;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.icon::-webkit-scrollbar {
+    height: 10px;
+}
+
+.icon::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.icon::-webkit-scrollbar-thumb {
+    background-color: rgba(246, 248, 242, 0.1);
+    border-radius: 20px;
+}
+
+.coffee {
+    margin: 0 auto;
+    padding: 3em 0 3em;
+}
+
+.h1_port {
+    color: rgb(195, 248, 4);
+    font-family: 'orbitron';
+    text-align: center;
+    line-height: 2;
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.p_port {
+    color: whitesmoke;
+    font-family: 'orbitron';
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.my_h1 {
+    display: flex;
+    color: rgb(195, 248, 4);
+    font-family: 'orbitron';
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+
+}
+
+.my_h3 {
+    color: whitesmoke;
+    font-family: 'orbitron';
+    font-size: 1.5rem;
+    vertical-align: top;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+
+.my_p {
+    width: 50vw;
+    color: whitesmoke;
+    font-family: 'orbitron';
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    margin: 4em 0 3em;
+}
+
+.my_button {
+    width: 10em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding-top: 2em;
+}
+
+.my_btn {
+    min-width: 15vw;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(195, 248, 4);
+    border: none;
+    border-radius: 10px;
+    font-family: 'orbitron';
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #100d1d;
+    transition-property: box-shadow, color, background-color;
+    transition-duration: .3s;
+    animation-timing-function: ease;
+}
+
+.my_btn:hover {
+    background-color: #141415e5;
+    color: white;
+    box-shadow: 0 0 15px rgb(195, 248, 4);
+}
+
+.my_a_for_btn {
+    text-decoration: none;
+    font-family: 'orbitron';
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.my_a_for_btn:hover {
+    color: aliceblue;
+    transition: box-shadow 0.3s ease;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    box-shadow: 0 0 15px #000000;
+}
+
+
+.myPhoto {
+    box-shadow: 0 0 15px #000000;
+}
+
+/* About me */
+.coffee-box {
+    width: 75vw;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .my_navbar,
+    .my_container,
+    .logo_name {
+        width: 100%;
+    }
+
+    .my_h1,
+    .my_h3 {
+        font-size: 3rem;
+    }
+
+    .my_button,
+    .my_btn {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .my_p,
+    .h1_port,
+    .p_port {
+        width: auto;
+        text-align: justify;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .my_navbar,
+    .my_container,
+    .logo_name {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my_h1,
+    .my_h3 {
+        font-size: 2rem;
+    }
+
+    .my_button,
+    .my_btn {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .my_p,
+    .h1_port,
+    .p_port {
+        width: auto;
+        text-align: justify;
+        font-size: 1rem;
+    }
+}
